@@ -1,0 +1,76 @@
+{
+    "status": 1,
+    "message": "成功获取所有商品状态",
+    "data": {
+        "27": {
+            "id": 27,
+            "name": "暴风超体电视 40X战警版",
+            "m_name": "暴风超体电视 40X战警版",
+            "is_sale": 1,
+            "enable": 1,
+            "price": "1699.00",
+            "hardware_price": "0.00",
+            "image": "upload/product/x10001/201611241479976935.png",
+            "slogan": "玫瑰金纤薄机身/全高清屏/剧场级立体声",
+            "hint": "1.4-1.15加送12个月VIP影视会员",
+            "url": "product/27",
+            "details_url": "http://www.bftv.com/product/27"
+        },
+        "40": {
+            "id": 40,
+            "name": "VR电视 55X战警版",
+            "m_name": "VR电视 55X战警版",
+            "is_sale": 3,
+            "enable": 1,
+            "price": "2999.00",
+            "hardware_price": "3199.00",
+            "image": "upload/product/x10005/201611241479980114.png",
+            "slogan": "全景VR/4K超高清大屏/主机分体可升级",
+            "hint": "1.8-1.15 送年货大礼包",
+            "url": "product/40",
+            "details_url": "http://www.bftv.com/product/40"
+        },
+        "47": {
+            "id": 47,
+            "name": "VR电视 50X战警版",
+            "m_name": "VR电视 50X战警版",
+            "is_sale": 1,
+            "enable": 1,
+            "price": "2799.00",
+            "hardware_price": "0.00",
+            "image": "upload/product/X10015/201611241479980918.png",
+            "slogan": "全景VR/4K超高清大屏/16G大存储",
+            "hint": "1.4-1.15加送12个月VIP影视会员+年货大礼包",
+            "url": "product/47",
+            "details_url": "http://www.bftv.com/product/47"
+        },
+        "95": {
+            "id": 95,
+            "name": "暴风超体电视2 45XS星际迷航版",
+            "m_name": "暴风超体电视2 45XS星际迷航版",
+            "is_sale": 1,
+            "enable": 1,
+            "price": "1899.00",
+            "hardware_price": "1999.00",
+            "image": "upload/product/45XS/201611241479978208.png",
+            "slogan": "45\"黄金尺寸/Hi-Fi级音效/夏普10代线/金属纤薄机身",
+            "hint": "1.4-1.15 送年货大礼包",
+            "url": "product/95",
+            "details_url": "http://www.bftv.com/product/95"
+        },
+        "96": {
+            "id": 96,
+            "name": "VR电视 45X星际迷航版",
+            "m_name": "VR电视 45X星际迷航版",
+            "is_sale": 1,
+            "enable": 1,
+            "price": "2299.00",
+            "hardware_price": "0.00",
+            "image": "upload/product/45X/201611241479978125.png",
+            "slogan": "45\"黄金尺寸/VR全景/4K屏/主机分体可升级",
+            "hint": "1.4-1.15 送年货大礼包",
+            "url": "product/96",
+            "details_url": "http://www.bftv.com/product/96"
+        }
+    }
+}
