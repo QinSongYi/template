@@ -17,7 +17,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.head{width: 100%;background-color: rgba(255,255,255,0.97);height: 1rem;line-height: 1rem;position: fixed;top: 0;padding: 0 0.24rem;box-sizing: border-box;}
+.head{width: 100%;background-color: rgba(255,255,255,0.97);height: 1rem;line-height: 1rem;position: fixed;top: 0;padding: 0 0.24rem;box-sizing: border-box;z-index: 99;}
 .logo{float: left;}
 .logo img{height: 0.4rem;vertical-align: middle;}
 .right{float: right;font-size: 0.24rem;}

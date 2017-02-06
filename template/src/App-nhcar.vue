@@ -1,9 +1,9 @@
 <template>
   <div>
-    <nonav rule='<p style="padding:20px;font-size:14px;line-height:28px;"><span style="font-weight:600;font-size:16px;display:inline-block;margin-bottom:7px;">1. 购电视 填信息</span><br/>仅限1月10号-1月25号，在暴风TV官网购买暴风超体电视的用户（购买后退货不算）。下单完成后，请按页面提示的保存生成的图片。<br/><span style="font-weight:600;font-size:16px;display:inline-block;margin:7px 0;">2. 分享朋友圈 集赞</span><br/>将生成的页面保存到手机，然后分享到朋友圈集赞。然后于2月9日23:00（逾期视为自动放弃）之前，把“朋友圈点赞截图”发微博并@暴风TV，按照朋友圈点赞数排名，前100名可参与抽7座SUV大奖（一辆）、700bike智能潮流单车（一辆）、暴风魔镜S1（五个），其余未中奖用户将获得获得200元年度会员抵用券。<br/><span style="font-weight:600;font-size:16px;display:inline-block;margin:7px 0;">3. 看直播 抽SUV</span><br/>2月11日10:00，以现场直播的形式抽取SUV。<br/><br/>温馨提示：<br/>1.订单中实物赠品均在收到货之后的7个工作日发放，由于赠品通过第三方物流发放，受物流时效影响，所有实物赠品均在2月4日后发出。<br/>2.所有参与抽奖用户的订单信息、集赞数量必须真实客观，若出现造假行为，将取消抽奖资格。</p>'></nonav>
-    <banner height="1150" bgsrc="http://static.bftv.com/bftv_wxl/nhcar/banner1.jpg"></banner>
-    <mdnav linksName="买电视赢SUV,限时精选年货,新年优惠套餐,内容生态专场,直播够送好礼,以旧换新返券" links="#car,#nianhuo,#taocan,#huiyuan,#live,#exchange"></mdnav>
-    <div id="car" class="car">
+    <nonav rule='<p style="padding:20px;font-size:14px;line-height:28px;"><span style="font-weight:600;font-size:16px;display:inline-block;margin-bottom:7px;">常见问题：</span><br/>Q：买年度会员赠送的一年会员如何领取？怎么激活？如何参与抽奖赢取700bike智能单车？<br/>A：您购买会员成功之后，系统会自动发出短信，短信含有额外赠送一年的会员激活码，直播抽奖的二维码链接。赠送会员激活：电视开机联网—我的—VIP会员中心—注册登录—点击激活VIP—输入订单号—确认激活（若无法激活请将电视在线升级至1.9.1版本）<br/><br/>Q：买月度会员，赠送价值646元游戏大礼包含有什么？如何领取？<br/>A：赠送价值646元游戏大礼包含有：《我叫MT2》价值298元游戏激活码、《苍翼默示录》价值298元游戏激活码、《有乐斗地主》价值50元游戏激活码，您购买会员成功之后，系统会自动发出短信，短信含有1个订单（对应三款游戏各1个激活码）。<br/><br/>Q：买季度会员赠送善诊医疗孝心体检套餐如何领取？<br/>A：您购买会员成功之后，系统会自动发出短信，短信含有体检套餐二维码链接和兑换口令，您扫码进入“领取体检套餐H5页面”领取。<br/><br/>Q：以上赠品什么时候可以领取到呢？<br/>A：预计1月19日后开始发放。</p>'></nonav>
+    <banner height="1150" bgsrc="http://static.bftv.com/bftv_wxl/nhcar/banner2.jpg"></banner>
+    <mdnav linksName="内容生态专场,限时精选年货,新年优惠套餐,直播够送好礼,以旧换新返券" links="#huiyuan,#nianhuo,#taocan,#live,#exchange"></mdnav>
+    <!-- <div id="car" class="car">
       <div>
         <div class="countdown-component">
           <countdown endtime="2017/02/01 00:00:00"></countdown>
@@ -12,7 +12,7 @@
         <a class="morecar" href="http://www.swmmotors.com.cn/" target="_blank"></a>
         <a class="shuoming" href="javascript:;" v-on:click="shuoming"></a>
       </div>
-    </div>
+    </div> -->
     <div class="product-component">
       <div class="container">
         <div id="nianhuo" class="one">
@@ -20,7 +20,7 @@
           <productcol ids="47,96,27"></productcol>
         </div>
         <div id="taocan" class="two">
-          <owl ids="35,46,173,44,130,131,132,133,111,133,112,114,59,39,174,29" dotsEach="4"></owl>
+          <owl ids="35,46,173,44,130,131,132,133,111,113,112,114,59,39,174,29" dotsEach="4"></owl>
         </div>
         <div id="huiyuan" class="three">
           <a href="javascript:;" v-on:click="huiyuan"></a>
@@ -53,7 +53,7 @@
     </div>
     <div id="exchange" class="five">
       <div class="foot-container">
-        <a href="/exchange_activity" target="_blank"><img src="http://static.bftv.com/bftv_wxl/nhcar/link1.jpg"></a>
+        <a href="/rushbuy/exchange.html" target="_blank"><img src="http://static.bftv.com/bftv_wxl/nhcar/link1.jpg"></a>
       </div>
     </div>
     <div id="live" class="five">
@@ -85,22 +85,22 @@ export default {
     Nonav,Banner,Mdnav,Countdown,Product,Productcol,Owl
   },
   methods:{
-    shuoming(){
-      layer.open({
-        title:'抽奖说明',
-        type: 1,
-        skin: 'layui-layer-rim', //加上边框
-        area: ['700px', 'auto'], //宽高
-        content: '<p style="padding:20px;font-size:14px;line-height:28px;"><span style="font-weight:600;font-size:16px;display:inline-block;margin-bottom:7px;">1. 购电视 填信息</span><br/>仅限1月10号-1月25号，在暴风TV官网购买暴风超体电视的用户（购买后退货不算）。下单完成后，请按页面提示的保存生成的图片。<br/><br/><span style="font-weight:600;font-size:16px;display:inline-block;margin-bottom:7px;">2. 分享朋友圈 集赞</span><br/>将生成的页面保存到手机，然后分享到朋友圈集赞。然后于2月9日23:00（逾期视为自动放弃）之前，把“朋友圈点赞截图”发微博并@暴风TV，按照朋友圈点赞数排名，前100名可参与抽7座SUV大奖（一辆）、700bike智能潮流单车（一辆）、暴风魔镜S1（五个），其余未中奖用户将获得获得200元年度会员抵用券。<br/><br/><span style="font-weight:600;font-size:16px;display:inline-block;margin-bottom:7px;">3. 看直播 抽SUV</span><br/>2月11日10:00，以现场直播的形式抽取SUV。</p>'
-      });
-    },
+    // shuoming(){
+    //   layer.open({
+    //     title:'抽奖说明',
+    //     type: 1,
+    //     skin: 'layui-layer-rim', //加上边框
+    //     area: ['700px', 'auto'], //宽高
+    //     content: '<p style="padding:20px;font-size:14px;line-height:28px;"><span style="font-weight:600;font-size:16px;display:inline-block;margin-bottom:7px;">1. 购电视 填信息</span><br/>仅限1月10号-1月25号，在暴风TV官网购买暴风超体电视的用户（购买后退货不算）。下单完成后，请按页面提示的保存生成的图片。<br/><br/><span style="font-weight:600;font-size:16px;display:inline-block;margin-bottom:7px;">2. 分享朋友圈 集赞</span><br/>将生成的页面保存到手机，然后分享到朋友圈集赞。然后于2月9日23:00（逾期视为自动放弃）之前，把“朋友圈点赞截图”发微博并@暴风TV，按照朋友圈点赞数排名，前100名可参与抽7座SUV大奖（一辆）、700bike智能潮流单车（一辆）、暴风魔镜S1（五个），其余未中奖用户将获得获得200元年度会员抵用券。<br/><br/><span style="font-weight:600;font-size:16px;display:inline-block;margin-bottom:7px;">3. 看直播 抽SUV</span><br/>2月11日10:00，以现场直播的形式抽取SUV。</p>'
+    //   });
+    // },
     huiyuan(){
       layer.open({
         title:'抽奖说明',
         type: 1,
         skin: 'layui-layer-rim', //加上边框
         area: ['700px', 'auto'], //宽高
-        content: '<p style="padding:20px;font-size:14px;line-height:28px;"><span style="font-weight:600;font-size:16px;display:inline-block;margin-bottom:7px;">常见问题：</span><br/>Q：买年度会员赠送的一年会员如何领取？怎么激活？如何参与抽奖赢取700bike智能单车？<br/>A：您购买会员成功之后，系统会自动发出短信，短信含有额外赠送一年的会员激活码，直播抽奖的二维码链接。赠送会员激活：电视开机联网—我的—VIP会员中心—注册登录—点击激活VIP—输入订单号—确认激活（若无法激活请将电视在线升级至1.9.1版本）<br/><br/>Q：买季度会员，赠送价值646元游戏大礼包含有什么？如何领取？<br/>A：赠送价值646元游戏大礼包含有：《我叫MT2》价值298元游戏激活码、《苍翼默示录》价值298元游戏激活码、《有乐斗地主》价值50元游戏激活码，您购买会员成功之后，系统会自动发出短信，短信含有1个订单（对应三款游戏各1个激活码）。<br/><br/>Q：买月度会员赠送善诊医疗孝心体检套餐如何领取？<br/>A：您购买会员成功之后，系统会自动发出短信，短信含有体检套餐二维码链接和兑换口令，您扫码进入“领取体检套餐H5页面”领取。<br/><br/>Q：以上赠品什么时候可以领取到呢？<br/>A：预计1月19日后开始发放。</p>'
+        content: '<p style="padding:20px;font-size:14px;line-height:28px;"><span style="font-weight:600;font-size:16px;display:inline-block;margin-bottom:7px;">常见问题：</span><br/>Q：买年度会员赠送的一年会员如何领取？怎么激活？如何参与抽奖赢取700bike智能单车？<br/>A：您购买会员成功之后，系统会自动发出短信，短信含有额外赠送一年的会员激活码，直播抽奖的二维码链接。赠送会员激活：电视开机联网—我的—VIP会员中心—注册登录—点击激活VIP—输入订单号—确认激活（若无法激活请将电视在线升级至1.9.1版本）<br/><br/>Q：买月度会员，赠送价值646元游戏大礼包含有什么？如何领取？<br/>A：赠送价值646元游戏大礼包含有：《我叫MT2》价值298元游戏激活码、《苍翼默示录》价值298元游戏激活码、《有乐斗地主》价值50元游戏激活码，您购买会员成功之后，系统会自动发出短信，短信含有1个订单（对应三款游戏各1个激活码）。<br/><br/>Q：买季度会员赠送善诊医疗孝心体检套餐如何领取？<br/>A：您购买会员成功之后，系统会自动发出短信，短信含有体检套餐二维码链接和兑换口令，您扫码进入“领取体检套餐H5页面”领取。<br/><br/>Q：以上赠品什么时候可以领取到呢？<br/>A：预计1月19日后开始发放。</p>'
       });
     }
   }
@@ -109,6 +109,9 @@ export default {
 
 
 <style type="text/css">
+  *{margin: 0;padding: 0;text-decoration: none;list-style-type: none;}
+  *:focus{outline: none;}
+  body{font-family: "Microsoft Yahei", 微软雅黑, "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, 华文细黑, sans-serif}
   .owl-theme .owl-dots{position: absolute;top: -130px;left: 64px;}
   .owl-theme .owl-dots .owl-dot span{width: 200px;height: 100px;margin-right: 45px;background-color: inherit;}
   .owl-theme .owl-dots .owl-dot.active span{background-color: inherit;}

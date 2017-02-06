@@ -6,8 +6,8 @@
           <p class="name">{{tv.name}}</p>
           <p class="slogan">{{tv.slogan}}</p>
           <p class="hint">{{tv.hint}}</p>
-          <p class="price">¥{{tv.price}}</p>
-          <a class="link" v-bind:href=" 'http://www.bftv.com/'+tv.url">立即抢购</a>
+          <p class="price">¥{{parseInt(tv.price)}}</p>
+          <a class="link" v-bind:href=" 'http://www.bftv.com/'+tv.url">{{tv.is_sale == 1 ? '立即抢购' : '立即预约'}}</a>
       </div>
     </div>
   </div>

@@ -1,13 +1,12 @@
 <template>
   <div>
     <topnav></topnav>
-    <div style="height:60px;"></div>
-    <banner height="700" bgsrc="http://static.bftv.com/bftv_wxl/nianhuo/banner.jpg"></banner>
+    <banner height="845" bgsrc="http://static.bftv.com/bftv_wxl/nianhuo/banner1.jpg"></banner>
     <part></part>
     <div class="product-component">
       <div>
         <product ids="40,47,96,95,27"></product>
-        <div class="rule"><img src="http://static.bftv.com/bftv_wxl/nianhuo/rules.png" alt="活动规则"></div>
+        <div class="rule"><img src="http://static.bftv.com/bftv_wxl/nianhuo/rules1.png" alt="活动规则"></div>
       </div>
     </div>
   </div>
@@ -20,7 +19,7 @@ import Part from './components/part'
 import Product from './components/product'
 
 export default {
-  name: 'app',
+  name: 'appexchange',
   components: {
     Topnav,Banner,Part,Product
   }

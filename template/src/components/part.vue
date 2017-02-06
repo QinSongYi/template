@@ -3,24 +3,24 @@
     <div class="container">
     	<div class="left">
     		<div class="item1">
-    			<a href="http://www.bftv.com/exchange?src=http%3A%2F%2Fbftv.youdemai.com%2Fbftvp%2Fproduct%2Fsearch%3F%26category%3D2">
+    			<a href="http://www.bftv.com/exchange?src=http%3A%2F%2Fbftv.youdemai.com%2Fbftvp%2Fproduct%2Fsearch%3F%26category%3D2" target="_blank">
     				<div class="shadow"></div>
     			</a>
     		</div>
     		<div class="item2">
-    			<a href="http://www.bftv.com/exchange?src=http%3A%2F%2Fbftv.youdemai.com%2Fbftvp%2Fproduct%2Fsearch%3F%26category%3D4">
+    			<a href="http://www.bftv.com/exchange?src=http%3A%2F%2Fbftv.youdemai.com%2Fbftvp%2Fproduct%2Fsearch%3F%26category%3D4" target="_blank">
     				<div class="shadow"></div>
     			</a>
     		</div>
     	</div>
     	<div class="right">
     		<div class="item1">
-    			<a href="http://www.bftv.com/exchange?src=http%3A%2F%2Fbftv.youdemai.com%2Fbftvp%2Fproduct%2Fsearch%3F%26category%3D5">
+    			<a href="http://www.bftv.com/exchange?src=http%3A%2F%2Fbftv.youdemai.com%2Fbftvp%2Fproduct%2Fsearch%3F%26category%3D5" target="_blank">
     				<div class="shadow"></div>
     			</a>
     		</div>
     		<div class="item2">
-    			<a href="http://www.bftv.com/exchange?src=http%3A%2F%2Fbftv.youdemai.com%2Fbftvp%2Fproduct%2Fsearch%3F%26category%3D1">
+    			<a href="http://www.bftv.com/exchange?src=http%3A%2F%2Fbftv.youdemai.com%2Fbftvp%2Fproduct%2Fsearch%3F%26category%3D1" target="_blank">
     				<div class="shadow"></div>
     			</a>
     		</div>

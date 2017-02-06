@@ -1,6 +1,6 @@
 <template>
   <div class="head">
-      <a href="http://v.t.sina.com.cn/share/share.php?url=http://www.bftv.com/rushbuy&title= %23买电视抽SUV%23 @暴风TV 风迷年货节，买电视赢7座SUV！55吋VR电视仅售2999元！购机还送年货大礼包哦！转发并@暴风TV 再抽魔镜小D http://www.bftv.com&pic=http://static.bftv.com/bftv_wxl/nhcar/weibo.jpg " target="_blank">分享微博赢魔镜</a>
+      <a href="http://v.t.sina.com.cn/share/share.php?url=http://www.bftv.com/rushbuy&title= %23买会员赢智能单车%23 @暴风TV 风迷年货节，买VIP影视会员赢700bike！抢现金红包，55吋VR电视最低2999元！转发并@暴风TV 再抽魔镜小D www.bftv.com&pic=http://static.bftv.com/bftv_wxl/nhcar/weibo1.jpg " target="_blank">分享微博赢魔镜</a>
       <a href="javascript:;" v-on:click="open">活动规则</a>
       <a href="/mall">返回首页</a>
   </div>
