@@ -51,9 +51,9 @@ export default {
     $('.owl-carousel').owlCarousel({
       loop: true,
       items: 1,
-      autoplay: false,
+      autoplay: true,
       autoplayTimeout: 3000,
-      nav: true,
+      nav: false,
       navText:['<','>']
     });
   }
@@ -63,5 +63,5 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 img{width: 100%;}
-.num{position: absolute;top: 40px;left: 20px;color: #608FF7;}
+.num{position: absolute;top: 0.8rem;left: 0.4rem;color: #608FF7;font-size: 0.28rem;}
 </style>

@@ -2,12 +2,13 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 // import Appexchange from './App-exchange'
-import Appnhcar from './App-nhcar'
+// import Appnhcar from './App-nhcar'
 // import Appbudayang from './App-budayang'
+import Applivebuy from './App-livebuy'
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  template: '<Appnhcar/>',
-  components: { Appnhcar }
+  template: '<Applivebuy/>',
+  components: { Applivebuy }
 })

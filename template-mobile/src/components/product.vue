@@ -1,13 +1,13 @@
 <template>
   <div class="product-col">
-    <div v-for="tv in tvs" class="item" v-bind:style="{width:100/ids.split(',').length+'%'}">
+    <div v-for="(tv,index) in tvs" class="item" v-bind:style="{width:100/ids.split(',').length+'%'}">
       <div>
           <img v-bind:src="'http://img.bftv.com/'+tv.image">
           <p class="name">{{tv.name}}</p>
           <p class="slogan">{{tv.slogan}}</p>
-          <p class="hint">{{tv.hint}}</p>
-          <p class="price">¥{{parseInt(tv.price)}}</p>
-          <a class="link" v-bind:href=" 'http://www.bftv.com/'+tv.url">{{tv.is_sale == 1 ? '立即抢购' : '立即预约'}}</a>
+          <p class="hint">{{hint ? hint.split(';')[index] : tv.hint}}</p>
+          <p class="price">¥{{parseInt(tv.price)}}<small>{{parseInt(tv.hardware_price)!=0?'日常价：¥'+parseInt(tv.hardware_price):null}}</small></p>
+          <a class="link" v-bind:href=" tv.is_sale == 1 ? 'http://www.bftv.com/'+tv.url : 'http://www.bftv.com/appointments' ">{{tv.is_sale == 1 ? '立即抢购' : '立即预约'}}</a>
       </div>
     </div>
   </div>
@@ -22,7 +22,7 @@ export default {
         tvs:[]
     }
   },
-  props: ['ids'],
+  props: ['ids','hint'],
   mounted(){
     var idsArr = this.ids.split(',');
     $.getJSON('/ajax/products/allStatus?ids='+this.ids,function(result){
@@ -48,4 +48,5 @@ p.slogan{font-size: 0.24rem;color: #737373;height: 0.48rem;line-height: 0.24rem;
 p.hint{color: deeppink;font-size: 0.24rem;height: 0.48rem;line-height: 0.24rem;}
 p.price{color: #FF7A2C;font-size: 0.32rem;margin-bottom: 0.12rem;}
 .link{background-color: #D8393A;display: inline-block;font-size: 0.28rem;color: #fff;border-radius: 0.08rem;width: 2rem;height: 0.6rem;line-height: 0.6rem;}
+small{text-decoration:line-through;font-size: 0.24rem;color: #ccc;}
 </style>

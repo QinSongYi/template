@@ -5,7 +5,7 @@
     <banner height="484" bgsrc="http://static.bftv.com/bftv_wxl/yuanxiaojie/livebuy_02.jpg" maxw="1920"></banner>
     <div class="artist-components">
       <div>
-        <artist artists="http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp1.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp2.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp3.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp4.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp5.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp6.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp7.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp8.jpg" artistsData="23,18,26,22,17,24,7,16"></artist>
+        <artist artists="http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp1.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp2.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp3.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp4.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp5.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp6.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp7.jpg,http://static.bftv.com/bftv_wxl/yuanxiaojie/ppp8.jpg" artistsData="30,32,28,31,33,29,35,34"></artist>
       </div>
     </div>
     <div class="product-components">

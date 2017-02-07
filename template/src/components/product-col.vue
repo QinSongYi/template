@@ -7,7 +7,7 @@
           <p class="slogan">{{tv.slogan}}</p>
           <p class="hint">{{hint ? hint.split(';')[index] : tv.hint}}</p>
           <p class="price">¥{{parseInt(tv.price)}}<small>{{parseInt(tv.hardware_price)!=0?'日常价：¥'+parseInt(tv.hardware_price):null}}</small></p>
-          <a class="link" v-bind:href=" 'http://www.bftv.com/'+tv.url">{{tv.is_sale == 1 ? '立即抢购' : '立即预约'}}</a>
+          <a class="link" v-bind:href=" tv.is_sale == 1 ? 'http://www.bftv.com/'+tv.url : 'http://www.bftv.com/appointments' ">{{tv.is_sale == 1 ? '立即抢购' : '立即预约'}}</a>
       </div>
     </div>
   </div>
