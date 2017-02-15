@@ -2,7 +2,7 @@
   <div>
     <div class="owl-carousel owl-theme">
       <div class="item" v-for="(item,index) in artists.split(',')">
-        <a href="javascript:;" v-on:click="appointmentFunc(artistsData.split(',')[index])">
+        <a href="javascript:;" v-on:click="appointmentFunc(artistsData.split(',')[index],forenotice.length!=0 ? forenotice[index].room : '')">
           <img v-bind:src="item">
         </a>
         <p class="num">当前预约人数：{{forenotice.length!=0 ? forenotice[index].tx_num : null}}</p>
@@ -21,19 +21,20 @@ export default {
     }
   },
   methods:{
-    appointmentFunc(obj){
-      layer.prompt({title: '请输入手机号码', formType: 3}, function(pass, index){
-        layer.close(index);
-        $.getJSON('/jsonp/forenotice/nologinset?bftvcallback=?&fid='+obj+'&mobile='+pass,function(result){
-          if(result.status == 1){
-            layer.msg('预约成功');
-          }else if(result.status == 0){
-            layer.alert(result.message,{title:'错误'});
-          }else{
-            layer.alert('系统繁忙请稍候重试',{title:'错误'});
-          }
-        });
-      });
+    appointmentFunc(obj,Rid){
+      // layer.prompt({title: '请输入手机号码', formType: 3}, function(pass, index){
+      //   layer.close(index);
+      //   $.getJSON('/jsonp/forenotice/nologinset?bftvcallback=?&fid='+obj+'&mobile='+pass,function(result){
+      //     if(result.status == 1){
+      //       layer.msg('预约成功');
+      //     }else if(result.status == 0){
+      //       layer.alert(result.message,{title:'错误'});
+      //     }else{
+      //       layer.alert('系统繁忙请稍候重试',{title:'错误'});
+      //     }
+      //   });
+      // });
+      window.location.href='http://livebuy.baofeng.com/'+Rid;
     }
   },
   mounted(){
